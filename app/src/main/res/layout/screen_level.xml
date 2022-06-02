@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.screens.LevelScreen">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/title_bg" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backGame"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/option_0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/settings"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/option_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/easy"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stage_select_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/easyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/easy"
+        android:textColor="@color/color1"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/easy"
+        app:layout_constraintLeft_toLeftOf="@id/easy"
+        app:layout_constraintRight_toRightOf="@id/easy"
+        app:layout_constraintTop_toTopOf="@id/easy" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/medium"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stage_select_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/mediumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/medium"
+        android:textColor="@color/color1"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/medium"
+        app:layout_constraintLeft_toLeftOf="@id/medium"
+        app:layout_constraintRight_toRightOf="@id/medium"
+        app:layout_constraintTop_toTopOf="@id/medium" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/hard"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stage_select_btn"
+        app:layout_constraintLeft_toLeftOf="@id/easy"
+        app:layout_constraintRight_toRightOf="@id/medium"
+        app:layout_constraintTop_toBottomOf="@id/easy" />
+
+    <TextView
+        android:id="@+id/hardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/hard"
+        android:textColor="@color/color1"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/hard"
+        app:layout_constraintLeft_toLeftOf="@id/hard"
+        app:layout_constraintRight_toRightOf="@id/hard"
+        app:layout_constraintTop_toTopOf="@id/hard" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/feedback"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="36dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:src="@drawable/stage_select_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hard" />
+
+    <TextView
+        android:id="@+id/feedback_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/feedback"
+        android:textColor="@color/color1"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/feedback"
+        app:layout_constraintLeft_toLeftOf="@id/feedback"
+        app:layout_constraintRight_toRightOf="@id/feedback"
+        app:layout_constraintTop_toTopOf="@id/feedback" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/more_game"
+        android:layout_width="72dp"
+        android:layout_height="56dp"
+        android:layout_margin="8dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/more_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/share"
+        android:layout_width="72dp"
+        android:layout_height="56dp"
+        android:layout_margin="8dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

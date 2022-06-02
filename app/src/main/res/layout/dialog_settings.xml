@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/theme_bg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/categoriesParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/theme">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/category_sport"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:padding="8dp"
+            android:src="@drawable/category_sport" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/category_flag"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:padding="8dp"
+            android:src="@drawable/category_flag" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/category_numbers"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/category_number" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/category_other"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/category_other" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoriesParent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sound_manage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/popup_1"
+            tools:src="@drawable/soundon_0" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/popup_1"
+            android:src="@drawable/review_0" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/popup_1"
+            android:src="@drawable/info_0" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/continue_game"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/popup_1"
+            android:src="@drawable/continue_0" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Created by: Khusanov Ismoilbek"
+        android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.memorygame.presentation.ui.screens.SplashScreen"
+        android:label="screen_splash"
+        tools:layout="@layout/screen_splash" >
+        <action
+            android:id="@+id/action_splashScreen_to_levelScreen"
+            app:destination="@id/levelScreen"
+            app:enterAnim="@anim/from_rigth_splash"
+            app:exitAnim="@anim/to_left_splash"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelScreen"
+        android:name="uz.gita.memorygame.presentation.ui.screens.LevelScreen"
+        android:label="screen_level"
+        tools:layout="@layout/screen_level" >
+        <action
+            android:id="@+id/action_levelScreen_to_gameScreen"
+            app:destination="@id/gameScreen"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameScreen"
+        android:name="uz.gita.memorygame.presentation.ui.screens.GameScreen"
+        android:label="screen_game"
+        tools:layout="@layout/screen_game" >
+        <argument
+            android:name="level"
+            app:argType="uz.gita.memorygame.data.model.LevelEnum" />
+    </fragment>
+</navigation>

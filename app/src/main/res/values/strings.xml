@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="dialog_back">Are you sure you want to quit the game?</string>
+    <string name="dialog_back_game">Do you really want to give up?</string>
+    <string name="you_win">Congratulation \n\nYou win!!!</string>
+    <string name="hard">HARD</string>
+    <string name="restart">Restart?</string>
+    <string name="feedback">Feedback</string>
+</resources>
